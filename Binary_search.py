@@ -21,7 +21,7 @@ if __name__ == '__main__':
     numbers = int(input("Enter Array Size : "))
     list = []
     for i in range(numbers):
-        list.append(randint(0,100))
+        list.append(randint(0,150))
     list.sort()
     for i in list:
         print(i,end="   ")
