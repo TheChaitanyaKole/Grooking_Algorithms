@@ -1,5 +1,21 @@
 from random import randint
 
+def smallest(list):
+    small = list[0]
+    small_index = 0
+    for i in range(1,len(list)):
+        if list[i] < small:
+            small = list[i]
+            small_index = i
+    return small_index
+
+def selectionsort(list):
+    arr = []
+    for i in range(len(list)):
+        small = smallest(list)
+        arr.append(list.pop(small))
+    return arr
+
 def binary_search(list,to_search):
     low = 0
     high = len(list) - 1
@@ -22,7 +38,7 @@ if __name__ == '__main__':
     list = []
     for i in range(numbers):
         list.append(randint(0,100))
-    list.sort()
+    list = selectionsort(list)
     for i in list:
         print(i,end="   ")
     print()
