@@ -24,7 +24,7 @@ if __name__ == '__main__':
         list.append(randint(0,100))
     list.sort()
     for i in list:
-        print(i,end="   ")
+        print(i,end="    ")
     print()
     to_search = int(input("Enter Number to Search : "))
     result = binary_search(list,to_search)
