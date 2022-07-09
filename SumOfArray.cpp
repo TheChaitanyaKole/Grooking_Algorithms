@@ -9,7 +9,9 @@ int sum(int arr[], int size)
     return arr[size] + sum(arr, size-1);
 }
 
-int main(int argc, char const *argv[]) {
+int main(int argc, char const *argv[])
+{
+  cout << "Enter size of Array : ";
   int size;
   cin >> size;
   int arr[size];
