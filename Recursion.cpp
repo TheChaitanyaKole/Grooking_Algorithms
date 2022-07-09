@@ -21,6 +21,7 @@ int fact(int n)
 
 int main(int argc, char const *argv[])
 {
+  cout << "Enter a number : ";
   int n;
   cin >> n;
   print(n);
