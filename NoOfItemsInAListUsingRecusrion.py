@@ -16,4 +16,4 @@ if __name__ == "__main__":
         time.sleep(0.1)
     print()
     leng = length(list)
-    print("length of list is ",leng)
+    print("length of list is : ",leng)
